@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://whistlerchiro.com/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0f1110">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230f1110'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' fill='%23e9e7e1' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -8 64 64'%3E%3Crect x='-12' y='-8' width='64' height='64' fill='%230f1110'/%3E%3Cg fill='%23e9e7e1'%3E%3Crect x='17' y='2' width='6' height='4' rx='2'/%3E%3Crect x='13' y='9' width='14' height='5' rx='2.5'/%3E%3Crect x='9' y='17' width='22' height='5' rx='2.5'/%3E%3Crect x='5' y='25' width='30' height='5.5' rx='2.75'/%3E%3Crect x='1' y='33.5' width='38' height='6' rx='3'/%3E%3Crect x='18.5' y='42' width='3' height='6'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -73,9 +73,11 @@ h1,h2,h3{font-family:var(--display);font-stretch:112%;font-weight:600;line-heigh
 /* nav */
 .nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-.wordmark{text-decoration:none;display:flex;flex-direction:column;gap:3px}
-.wordmark b{font-family:var(--display);font-stretch:125%;font-weight:700;font-size:1.05rem;letter-spacing:.24em;line-height:1}
-.wordmark span{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fog)}
+.wordmark{text-decoration:none;display:flex;align-items:center;gap:12px}
+.wordmark .mark{width:26px;height:31px;flex:none}
+.wm-text{display:flex;flex-direction:column;gap:4px}
+.wordmark b{font-family:var(--display);font-stretch:125%;font-weight:700;font-size:1rem;letter-spacing:.16em;line-height:1}
+.wm-text span{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fog)}
 .nav ul{display:flex;gap:2.2rem;list-style:none;align-items:center}
 .nav ul a{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--fog);transition:color .2s}
 .nav ul a:hover{color:var(--bone)}
@@ -201,7 +203,7 @@ form .fine{font-size:.85rem;color:var(--ink-2)}
 
 /* footer */
 footer{padding:72px 0 40px;border-top:1px solid var(--rule)}
-footer .big{font-family:var(--display);font-stretch:125%;font-weight:700;font-size:clamp(3rem,12vw,10rem);letter-spacing:.06em;line-height:.9;color:#22262300;-webkit-text-stroke:1px rgba(233,231,225,.22);margin-bottom:3rem}
+footer .big{font-family:var(--display);font-stretch:125%;font-weight:700;font-size:clamp(2.4rem,8.5vw,7.6rem);letter-spacing:.04em;line-height:.9;color:#22262300;-webkit-text-stroke:1px rgba(233,231,225,.22);margin-bottom:3rem}
 footer .row{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
 footer a{color:var(--fog);text-decoration:none}
 footer a:hover{color:var(--bone)}
@@ -239,9 +241,9 @@ footer a:hover{color:var(--bone)}
 
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a class="wordmark" href="#top" aria-label="Paige Nosal, mobile chiropractic and massage, Whistler">
-      <b>NOSAL</b>
-      <span>Mobile Chiro + Massage · Whistler</span>
+    <a class="wordmark" href="#top" aria-label="Whistler Chiro, mobile chiropractic and massage">
+<svg class="mark" viewBox="0 0 40 48" fill="currentColor" aria-hidden="true"><rect x="17" y="2" width="6" height="4" rx="2"/><rect x="13" y="9" width="14" height="5" rx="2.5"/><rect x="9" y="17" width="22" height="5" rx="2.5"/><rect x="5" y="25" width="30" height="5.5" rx="2.75"/><rect x="1" y="33.5" width="38" height="6" rx="3"/><rect x="18.5" y="42" width="3" height="6"/></svg><span class="wm-text"><b>WHISTLER CHIRO</b>
+      <span>Mobile chiropractic + massage</span></span>
     </a>
     <ul id="menu">
       <li><a href="#how">How it works</a></li>
@@ -450,7 +452,7 @@ footer a:hover{color:var(--bone)}
 
 <footer>
   <div class="wrap">
-    <div class="big" aria-hidden="true">NOSAL</div>
+    <div class="big" aria-hidden="true">WHISTLER CHIRO</div>
     <div class="row">
       <span>© <span id="yr">2026</span> Dr. Paige Nosal, D.C. · Mobile chiropractic + massage · Whistler, BC</span>
       <span><a href="mailto:drpaigenosal@gmail.com">drpaigenosal@gmail.com</a></span>
