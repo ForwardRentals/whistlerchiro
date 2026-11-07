@@ -104,15 +104,23 @@ section{padding:clamp(72px,10vw,130px) 0}
 .step h3{font-size:1.3rem;margin-bottom:.45rem}
 .step p{color:var(--muted);font-size:.95rem}
 
+.how .layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,70px);align-items:center}
+.how .layout .steps{grid-template-columns:1fr}
+.how figure,.book figure,.combo figure{position:relative;overflow:hidden}
+.how figure{border-radius:var(--radius);aspect-ratio:4/5;box-shadow:0 30px 60px -25px rgba(31,42,36,.45)}
+.how figure img,.book figure img,.combo figure img{width:100%;height:100%;object-fit:cover}
+.step{display:flex;gap:1.1rem;align-items:flex-start}
+.step span{flex:none;margin-bottom:0}
 /* combos */
 .combos{background:var(--cream)}
 .combos .head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
 .combos h2{font-size:clamp(2rem,4vw,3.1rem);margin-top:.6rem;max-width:16ch}
 .combos .head p{max-width:42ch;color:var(--muted)}
 .combo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.combo{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem 1.7rem;display:flex;flex-direction:column;position:relative}
+.combo{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:0 1.7rem 1.9rem;display:flex;flex-direction:column;position:relative}
 .combo.feature{background:var(--ink);color:#eef0ea;border-color:var(--ink)}
-.combo .tag{position:absolute;top:-12px;left:1.7rem;background:var(--ember);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.35em .9em;border-radius:999px}
+.combo figure{margin:0 -1.7rem 1.5rem;aspect-ratio:16/10;border-radius:var(--radius) var(--radius) 0 0}
+.combo .tag{z-index:4;position:absolute;top:-12px;left:1.7rem;background:var(--ember);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.35em .9em;border-radius:999px}
 .combo .dur{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ember)}
 .combo.feature .dur{color:var(--ember-2)}
 .combo h3{font-size:1.55rem;margin:.4rem 0 .7rem}
@@ -197,6 +205,8 @@ form .fine{font-size:.82rem;color:var(--muted);text-align:center}
 .form-msg.err{display:block;background:#fbeae2;color:#7a3413}
 .hp{position:absolute;left:-9999px}
 
+.book .intro figure .credit{color:#fff;font-weight:400}
+.book figure{border-radius:14px;aspect-ratio:16/9;margin-top:1.8rem}
 /* footer */
 footer{background:var(--ink);color:#aeb7ae;padding:56px 0 40px;font-size:.88rem}
 footer .top{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:1.6rem}
@@ -209,6 +219,8 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
   .approach .grid,.about .grid,.book .grid{grid-template-columns:1fr}
   .portrait{position:static;max-width:380px}
   .combo-grid,.steps{grid-template-columns:1fr 1fr}
+  .how .layout{grid-template-columns:1fr}
+  .how figure{aspect-ratio:16/10}
   .photo-stack{max-width:520px}
 }
 @media (max-width:760px){
@@ -278,10 +290,16 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
       <h2>Your place. Her table. Better movement.</h2>
       <p>No waiting room, no driving sore. Everything needed for a full treatment comes with her.</p>
     </div>
+    <div class="layout">
     <div class="steps">
-      <div class="step"><span>1</span><h3>Book online</h3><p>Pick a combo, tell us where you are and when suits you. Paige confirms your time by email or text.</p></div>
-      <div class="step"><span>2</span><h3>She comes to you</h3><p>Paige arrives with a treatment table and everything else needed. All you need is a little floor space.</p></div>
-      <div class="step"><span>3</span><h3>Treat &amp; relax</h3><p>Assessment, adjustment and massage in one visit. Afterwards you're already home, so just rest.</p></div>
+      <div class="step"><span>1</span><div><h3>Book online</h3><p>Pick a combo, tell us where you are and when suits you. Paige confirms your time by email or text.</p></div></div>
+      <div class="step"><span>2</span><div><h3>She comes to you</h3><p>Paige arrives with a treatment table and everything else needed. All you need is a little floor space.</p></div></div>
+      <div class="step"><span>3</span><div><h3>Treat &amp; relax</h3><p>Assessment, adjustment and massage in one visit. Afterwards you're already home, so just rest.</p></div></div>
+    </div>
+    <figure>
+      <img src="img/log-cabin-in-snow.jpg" alt="Warm lights glowing in a log cabin surrounded by snowy trees" loading="lazy">
+      <a class="credit" href="https://thefulltimehobby.com/stock/log-cabin-in-snow.html" target="_blank" rel="noopener">Photo: The Full Time Hobby</a>
+    </figure>
     </div>
   </div>
 </section>
@@ -297,6 +315,7 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
     </div>
     <div class="combo-grid">
       <div class="combo">
+        <figure><img src="img/stretching-into-the-sunset.jpg" alt="Person stretching on a hilltop at sunset over the ocean" loading="lazy"><a class="credit" href="https://thefulltimehobby.com/stock/stretching-into-the-sunset.html" target="_blank" rel="noopener">Photo: The Full Time Hobby</a></figure>
         <div class="dur">About 60 minutes</div>
         <h3>The Reset</h3>
         <p>A quick tune-up when something's stiff, sore or just off.</p>
@@ -305,6 +324,7 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
       </div>
       <div class="combo feature">
         <div class="tag">Most popular</div>
+        <figure><img src="img/sunrise-lake-reflection.jpg" alt="Paddlers on a calm lake glowing at sunrise" loading="lazy"><a class="credit" href="https://thefulltimehobby.com/stock/sunrise-lake-reflection.html" target="_blank" rel="noopener">Photo: The Full Time Hobby</a></figure>
         <div class="dur">About 90 minutes</div>
         <h3>The Full Restore</h3>
         <p>The complete treatment for real pain, old injuries, or a body that's been working hard.</p>
@@ -312,6 +332,7 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
         <a class="btn btn-primary" href="#book" data-combo="The Full Restore (chiro + 60 min massage)">Book The Full Restore</a>
       </div>
       <div class="combo">
+        <figure><img src="img/clock-tower-snow-day.jpg" alt="Skiers celebrating under the clock in Whistler Village on a snowy day" loading="lazy"><a class="credit" href="https://thefulltimehobby.com/stock/clock-tower-snow-day.html" target="_blank" rel="noopener">Photo: The Full Time Hobby</a></figure>
         <div class="dur">About 75 minutes</div>
         <h3>Après Recovery</h3>
         <p>For a big day on the hill or the bike trails. Loosen up, realign, and be ready for tomorrow.</p>
@@ -408,6 +429,7 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg><span>Questions? Email <a href="mailto:drpaigenosal@gmail.com">drpaigenosal@gmail.com</a>.</span></li>
       </ul>
       <p style="font-size:.9rem">Many extended health plans cover chiropractic care. Receipts are provided for your insurer.</p>
+      <figure><img src="img/snowy-cabin-under-peaks.jpg" alt="Small cabin beneath snowy mountain peaks" loading="lazy"><a class="credit" href="https://thefulltimehobby.com/stock/snowy-cabin-under-peaks.html" target="_blank" rel="noopener">Photo: The Full Time Hobby</a></figure>
     </div>
     <form id="bookForm" novalidate>
       <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
