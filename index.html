@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Paige Nosal | Whistler Chiropractor</title>
-<meta name="description" content="Dr. Paige Nosal, D.C., is an evidence-based chiropractor and registered massage therapist in Whistler, BC. Biomechanical assessment, movement retraining and hands-on care at Whistler Chiropractic, Sundial Place. Now accepting new patients.">
+<title>Dr. Paige Nosal | Mobile Chiropractic &amp; Massage, Whistler</title>
+<meta name="description" content="Dr. Paige Nosal brings chiropractic care and massage therapy to you. In-home chiro and massage combos at your home, chalet or hotel in Whistler. Book online.">
 <link rel="canonical" href="https://whistlerchiro.com/">
-<meta property="og:title" content="Dr. Paige Nosal | Whistler Chiropractor">
-<meta property="og:description" content="Evidence-based chiropractic care in Whistler. Find the source, not just the symptom. Now accepting new patients.">
+<meta property="og:title" content="Dr. Paige Nosal | Mobile Chiropractic &amp; Massage, Whistler">
+<meta property="og:description" content="Chiropractic and massage, delivered. In-home chiro + massage combos anywhere in Whistler.">
 <meta property="og:image" content="https://whistlerchiro.com/img/black-tusk-sunset.jpg">
 <meta property="og:url" content="https://whistlerchiro.com/">
 <meta property="og:type" content="website">
@@ -20,26 +20,18 @@
 {
   "@context": "https://schema.org",
   "@type": "Chiropractor",
-  "name": "Dr. Paige Nosal, D.C. – Whistler Chiropractic",
+  "name": "Dr. Paige Nosal – Mobile Chiropractic & Massage",
   "url": "https://whistlerchiro.com/",
   "image": "https://whistlerchiro.com/img/black-tusk-sunset.jpg",
-  "telephone": "+1-604-932-1922",
-  "priceRange": "$80–$140",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "#204-4433 Sundial Place",
-    "addressLocality": "Whistler",
-    "addressRegion": "BC",
-    "postalCode": "V8E 1G7",
-    "addressCountry": "CA"
-  },
-  "geo": {"@type": "GeoCoordinates", "latitude": 50.1155, "longitude": -122.9530},
-  "areaServed": ["Whistler", "Pemberton", "Squamish", "Sea to Sky"],
+  "email": "drpaigenosal@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Whistler", "addressRegion": "BC", "addressCountry": "CA"},
+  "areaServed": {"@type": "City", "name": "Whistler"},
+  "description": "Mobile chiropractic and massage therapy. Dr. Paige Nosal treats clients at their home, chalet or hotel in Whistler.",
   "employee": {
     "@type": "Person",
     "name": "Dr. Paige Nosal",
     "jobTitle": "Chiropractor",
-    "honorificSuffix": "D.C., MSc, BSc, RMT",
+    "honorificSuffix": "D.C., MSc, BSc",
     "alumniOf": ["University of Waterloo", "Canadian Memorial Chiropractic College", "Royal Canadian College of Massage Therapy"]
   }
 }
@@ -48,7 +40,7 @@
 :root{
   --ink:#1f2a24; --ink-2:#36443b; --muted:#5d6a61;
   --cream:#f6f1e9; --paper:#fbf8f3; --line:#e4dccf;
-  --ember:#c8692f; --ember-2:#e08a4f; --sage:#8fa38e;
+  --ember:#c8692f; --ember-2:#e08a4f;
   --radius:18px; --wrap:1160px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -59,11 +51,11 @@ a{color:inherit}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
 .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ember)}
-.btn{display:inline-flex;align-items:center;gap:.5em;padding:.95em 1.6em;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .15s,background .15s,color .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.95em 1.6em;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s,color .15s}
 .btn:hover{transform:translateY(-1px)}
 .btn-primary{background:var(--ember);color:#fff}
 .btn-primary:hover{background:#b35a24}
-.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff;background:transparent}
 .btn-ghost:hover{background:#fff;color:var(--ink)}
 .btn-dark{background:var(--ink);color:#fff}
 .btn-dark:hover{background:var(--ink-2)}
@@ -88,34 +80,69 @@ h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.12;let
 /* hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,22,.45) 0%,rgba(20,26,22,.05) 35%,rgba(20,26,22,.35) 60%,rgba(20,26,22,.85) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,22,.45) 0%,rgba(20,26,22,.05) 35%,rgba(20,26,22,.4) 60%,rgba(20,26,22,.88) 100%)}
 .hero .wrap{position:relative;z-index:2;padding-bottom:clamp(56px,10vh,110px);width:100%}
 .pill{display:inline-flex;align-items:center;gap:.55em;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(6px);padding:.45em 1em;border-radius:999px;font-size:.85rem;font-weight:500;margin-bottom:1.4rem}
 .pill i{width:8px;height:8px;border-radius:50%;background:#7fd38b;box-shadow:0 0 0 4px rgba(127,211,139,.25)}
-.hero h1{font-size:clamp(2.6rem,6.4vw,5.2rem);max-width:13ch;margin-bottom:1.1rem}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.2rem);max-width:14ch;margin-bottom:1.1rem}
 .hero h1 em{font-style:italic;color:#f3c39b}
-.hero p.lede{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:40ch;opacity:.92;margin-bottom:2rem}
+.hero p.lede{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:42ch;opacity:.92;margin-bottom:2rem}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:.8rem}
 .hero .meta{margin-top:2.6rem;display:flex;flex-wrap:wrap;gap:.6rem 2rem;font-size:.88rem;opacity:.85}
 
 section{padding:clamp(72px,10vw,130px) 0}
+.credit{position:absolute;right:10px;bottom:8px;font-size:.66rem;color:#fff;opacity:.8;text-decoration:none;text-shadow:0 1px 3px rgba(0,0,0,.6);z-index:3}
+.credit:hover{opacity:1;text-decoration:underline}
+
+/* how it works */
+.how .head{max-width:640px;margin-bottom:3rem}
+.how h2{font-size:clamp(2rem,4vw,3.1rem);margin:.6rem 0 1rem}
+.how .head p{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem 1.6rem}
+.step span{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--cream);color:var(--ember);font-family:Fraunces,serif;font-weight:600;font-size:1.1rem;margin-bottom:1.1rem}
+.step h3{font-size:1.3rem;margin-bottom:.45rem}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* combos */
+.combos{background:var(--cream)}
+.combos .head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.combos h2{font-size:clamp(2rem,4vw,3.1rem);margin-top:.6rem;max-width:16ch}
+.combos .head p{max-width:42ch;color:var(--muted)}
+.combo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.combo{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem 1.7rem;display:flex;flex-direction:column;position:relative}
+.combo.feature{background:var(--ink);color:#eef0ea;border-color:var(--ink)}
+.combo .tag{position:absolute;top:-12px;left:1.7rem;background:var(--ember);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.35em .9em;border-radius:999px}
+.combo .dur{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ember)}
+.combo.feature .dur{color:var(--ember-2)}
+.combo h3{font-size:1.55rem;margin:.4rem 0 .7rem}
+.combo p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.combo.feature p{color:#c9d0c8}
+.combo ul{list-style:none;display:grid;gap:.45rem;margin-bottom:1.6rem;font-size:.93rem}
+.combo li{display:flex;gap:.6rem;align-items:flex-start}
+.combo li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--ember);margin-top:.6em}
+.combo .btn{margin-top:auto;align-self:flex-start}
+.singles{margin-top:1.4rem;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.single{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem}
+.single h3{font-family:Inter,sans-serif;font-size:1rem;font-weight:600;letter-spacing:0}
+.single small{color:var(--muted);font-size:.86rem}
+.single a{font-weight:600;font-size:.9rem;color:var(--ember);text-decoration:none;white-space:nowrap}
+.single a:hover{text-decoration:underline}
+.combos .note{margin-top:1.6rem;font-size:.9rem;color:var(--ink-2)}
 
 /* approach */
 .approach .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,6vw,90px);align-items:center}
 .approach h2{font-size:clamp(2rem,4vw,3.1rem);margin:.6rem 0 1.3rem}
 .approach p{color:var(--ink-2);margin-bottom:1rem;max-width:56ch}
-.pillars{display:grid;gap:1rem;margin-top:2rem}
-.pillar{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem 1.2rem;background:#fff;border:1px solid var(--line);border-radius:14px}
-.pillar span{flex:none;width:38px;height:38px;border-radius:10px;background:var(--cream);color:var(--ember);display:grid;place-items:center;font-family:Fraunces,serif;font-weight:600}
-.pillar h3{font-size:1.1rem;margin-bottom:.15rem;font-family:Inter,sans-serif;font-weight:600;letter-spacing:0}
-.pillar p{margin:0;font-size:.95rem;color:var(--muted)}
 .photo-stack{position:relative;aspect-ratio:4/5}
 .photo-stack figure{position:absolute;border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -25px rgba(31,42,36,.45)}
 .photo-stack figure img{width:100%;height:100%;object-fit:cover}
 .photo-stack .a{inset:0 18% 22% 0}
 .photo-stack .b{inset:48% 0 0 30%;border:6px solid var(--paper)}
-.credit{position:absolute;right:10px;bottom:8px;font-size:.66rem;color:#fff;opacity:.8;text-decoration:none;text-shadow:0 1px 3px rgba(0,0,0,.6)}
-.credit:hover{opacity:1;text-decoration:underline}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:2rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+.card h3{font-family:Inter,sans-serif;font-size:.98rem;font-weight:600;letter-spacing:0;margin-bottom:.2rem}
+.card p{margin:0;font-size:.9rem;color:var(--muted)}
 
 /* about */
 .about{background:var(--ink);color:#eef0ea}
@@ -139,17 +166,6 @@ section{padding:clamp(72px,10vw,130px) 0}
 .offduty .ico{flex:none;width:44px;height:44px;border-radius:12px;background:rgba(224,138,79,.15);display:grid;place-items:center;color:var(--ember-2)}
 .offduty p{margin:0;font-size:.95rem}
 
-/* treatments */
-.treat .head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
-.treat h2{font-size:clamp(2rem,4vw,3rem);margin-top:.6rem;max-width:18ch}
-.treat .head p{max-width:42ch;color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.6rem;transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(31,42,36,.35)}
-.card svg{width:34px;height:34px;color:var(--ember);margin-bottom:1.1rem}
-.card h3{font-size:1.3rem;margin-bottom:.45rem}
-.card p{color:var(--muted);font-size:.95rem}
-
 /* who */
 .who{position:relative;color:#fff;overflow:hidden;padding:clamp(90px,12vw,160px) 0}
 .who>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -157,36 +173,29 @@ section{padding:clamp(72px,10vw,130px) 0}
 .who .wrap{position:relative;z-index:2}
 .who h2{font-size:clamp(2rem,4vw,3.1rem);max-width:16ch;margin:.6rem 0 1.2rem}
 .who p{max-width:46ch;color:#dfe4dd;margin-bottom:1.8rem}
-.tags{display:flex;flex-wrap:wrap;gap:.55rem;max-width:620px}
+.tags{display:flex;flex-wrap:wrap;gap:.55rem;max-width:640px}
 .tags span{padding:.5em 1em;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-size:.88rem;backdrop-filter:blur(4px)}
-.who .credit{z-index:3}
 
-/* fees */
-.fees .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(40px,6vw,90px);align-items:start}
-.fees h2{font-size:clamp(2rem,4vw,3rem);margin:.6rem 0 1.2rem}
-.fees .intro p{color:var(--muted);margin-bottom:1rem;max-width:44ch}
-.fees .note{font-size:.88rem;background:var(--cream);border-radius:12px;padding:1rem 1.1rem;color:var(--ink-2);margin-top:1.5rem}
-.fee-list{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.fee{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.25rem 1.5rem;border-bottom:1px solid var(--line)}
-.fee:last-child{border-bottom:0}
-.fee h3{font-family:Inter,sans-serif;font-size:1rem;font-weight:600;letter-spacing:0}
-.fee small{color:var(--muted);font-size:.86rem}
-.fee .price{font-family:Fraunces,serif;font-size:1.45rem;white-space:nowrap}
-.fee-cta{padding:1.3rem 1.5rem;background:var(--cream);display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-.fee-cta p{font-size:.92rem;color:var(--ink-2);margin:0}
-
-/* visit */
-.visit{background:var(--cream)}
-.visit .grid{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(32px,5vw,70px);align-items:stretch}
-.visit h2{font-size:clamp(2rem,4vw,3rem);margin:.6rem 0 1.6rem}
-.info{display:grid;gap:1.4rem;margin-bottom:2rem}
-.info div small{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ember);font-weight:600;margin-bottom:.2rem}
-.info div a,.info div span{font-size:1.08rem;text-decoration:none}
-.info div a:hover{text-decoration:underline}
-.visit .ctas{display:flex;gap:.8rem;flex-wrap:wrap}
-.map{border-radius:var(--radius);overflow:hidden;min-height:380px;border:1px solid var(--line);background:#e9e2d6}
-.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
-.visit .fine{margin-top:1.4rem;font-size:.86rem;color:var(--muted)}
+/* booking */
+.book .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,90px);align-items:start}
+.book h2{font-size:clamp(2rem,4vw,3.1rem);margin:.6rem 0 1.2rem}
+.book .intro p{color:var(--muted);margin-bottom:1rem;max-width:44ch}
+.book .intro ul{list-style:none;display:grid;gap:.8rem;margin:1.8rem 0}
+.book .intro li{display:flex;gap:.8rem;align-items:flex-start;font-size:.97rem}
+.book .intro li svg{flex:none;width:22px;height:22px;color:var(--ember);margin-top:.15em}
+.book .intro a{color:var(--ember);font-weight:600}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.4rem,3vw,2.2rem);display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.1rem;box-shadow:0 30px 60px -40px rgba(31,42,36,.4)}
+form .full{grid-column:1/-1}
+label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.35rem;color:var(--ink-2)}
+input,select,textarea{width:100%;font:inherit;font-size:.97rem;padding:.8em .9em;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--ember-2);outline-offset:1px;border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+form .btn{width:100%;padding:1.05em}
+form .fine{font-size:.82rem;color:var(--muted);text-align:center}
+.form-msg{display:none;grid-column:1/-1;padding:1rem 1.1rem;border-radius:10px;font-size:.95rem}
+.form-msg.ok{display:block;background:#e8f3e7;color:#24502a}
+.form-msg.err{display:block;background:#fbeae2;color:#7a3413}
+.hp{position:absolute;left:-9999px}
 
 /* footer */
 footer{background:var(--ink);color:#aeb7ae;padding:56px 0 40px;font-size:.88rem}
@@ -196,11 +205,10 @@ footer a{color:#dfe4dd}
 footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .mobile-book{display:none}
 
-/* responsive */
 @media (max-width:960px){
-  .approach .grid,.about .grid,.fees .grid,.visit .grid{grid-template-columns:1fr}
+  .approach .grid,.about .grid,.book .grid{grid-template-columns:1fr}
   .portrait{position:static;max-width:380px}
-  .cards{grid-template-columns:1fr 1fr}
+  .combo-grid,.steps{grid-template-columns:1fr 1fr}
   .photo-stack{max-width:520px}
 }
 @media (max-width:760px){
@@ -213,14 +221,13 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
   .nav.open{background:var(--paper)}
   .nav.open .brand,.nav.open .menu-btn{color:var(--ink)}
   .menu-btn{display:block;color:#fff}
-  .cards{grid-template-columns:1fr}
-  .creds{grid-template-columns:1fr}
+  .combo-grid,.steps,.singles,.cards,.creds{grid-template-columns:1fr}
+  .combo-grid{gap:1.8rem}
+  form{grid-template-columns:1fr}
   .portrait{max-width:260px}
   .portrait .mono{font-size:3.6rem}
-  .fee{padding:1.1rem 1.1rem}
-  .hero .meta{gap:.4rem 1.2rem}
-  .mobile-book{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:.6rem}
-  .mobile-book a{flex:1;justify-content:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+  .mobile-book{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}
+  .mobile-book a{flex:1;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
   footer{padding-bottom:96px}
 }
 </style>
@@ -229,17 +236,16 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
 
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Dr. Paige Nosal, Whistler Chiropractor">
+    <a class="brand" href="#top" aria-label="Dr. Paige Nosal, mobile chiropractic and massage in Whistler">
       <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="currentColor" opacity=".12"/><path d="M10 46 L26 22 L33 32 L40 18 L54 46 Z" fill="#e08a4f"/></svg>
-      <span><b>Dr. Paige Nosal</b><small>Whistler Chiropractor</small></span>
+      <span><b>Dr. Paige Nosal</b><small>Mobile Chiro &amp; Massage</small></span>
     </a>
     <ul id="menu">
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#combos">Combos</a></li>
       <li><a href="#approach">Approach</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#treatments">Treatments</a></li>
-      <li><a href="#fees">Fees</a></li>
-      <li><a href="#visit">Visit</a></li>
-      <li><a class="btn btn-primary" href="https://whistlerchiropractic.janeapp.com/#/staff_member/13" target="_blank" rel="noopener">Book online</a></li>
+      <li><a class="btn btn-primary" href="#book">Book a visit</a></li>
     </ul>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -249,21 +255,77 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
 
 <header class="hero" id="top">
   <img src="img/black-tusk-sunset.jpg" alt="Black Tusk glowing at sunset above Whistler" fetchpriority="high">
-  <a class="credit" href="https://thefulltimehobby.com/stock/black-tusk-sunset.html" target="_blank" rel="noopener" style="z-index:3">Photo: The Full Time Hobby</a>
+  <a class="credit" href="https://thefulltimehobby.com/stock/black-tusk-sunset.html" target="_blank" rel="noopener">Photo: The Full Time Hobby</a>
   <div class="wrap">
-    <div class="pill"><i></i>Now accepting new patients</div>
-    <h1>Move better. <em>Stay out there.</em></h1>
-    <p class="lede">Evidence-based chiropractic care in Whistler with Dr. Paige Nosal. We find the source of your pain, fix how you move, and keep it from coming back.</p>
+    <div class="pill"><i></i>In-home visits across Whistler</div>
+    <h1>Chiro &amp; massage, <em>delivered.</em></h1>
+    <p class="lede">Dr. Paige Nosal brings the table to you. Chiropractic and massage therapy combos at your home, chalet or hotel, so you can skip the drive and stay comfortable after treatment.</p>
     <div class="ctas">
-      <a class="btn btn-primary" href="https://whistlerchiropractic.janeapp.com/#/staff_member/13" target="_blank" rel="noopener">Book with Dr. Nosal</a>
-      <a class="btn btn-ghost" href="tel:+16049321922">Call 604-932-1922</a>
+      <a class="btn btn-primary" href="#book">Book a visit</a>
+      <a class="btn btn-ghost" href="#combos">See the combos</a>
     </div>
     <div class="meta">
-      <span>D.C. · MSc · BSc (Hons Kin) · RMT</span>
-      <span>Whistler Chiropractic, Sundial Place</span>
+      <span>Doctor of Chiropractic · Massage therapy trained</span>
+      <span>Homes · Chalets · Hotels · Vacation rentals</span>
     </div>
   </div>
 </header>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">How it works</div>
+      <h2>Your place. Her table. Better movement.</h2>
+      <p>No waiting room, no driving sore. Everything needed for a full treatment comes with her.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span>1</span><h3>Book online</h3><p>Pick a combo, tell us where you are and when suits you. Paige confirms your time by email or text.</p></div>
+      <div class="step"><span>2</span><h3>She comes to you</h3><p>Paige arrives with a treatment table and everything else needed. All you need is a little floor space.</p></div>
+      <div class="step"><span>3</span><h3>Treat &amp; relax</h3><p>Assessment, adjustment and massage in one visit. Afterwards you're already home, so just rest.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="combos" id="combos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eyebrow">Combos</div>
+        <h2>Chiro and massage, together.</h2>
+      </div>
+      <p>Adjustments work better on relaxed muscles, and massage lasts longer when joints move well. That's why the two go together in one visit.</p>
+    </div>
+    <div class="combo-grid">
+      <div class="combo">
+        <div class="dur">About 60 minutes</div>
+        <h3>The Reset</h3>
+        <p>A quick tune-up when something's stiff, sore or just off.</p>
+        <ul><li>Chiropractic assessment &amp; adjustment</li><li>30 minutes of focused massage</li><li>Simple take-home exercises</li></ul>
+        <a class="btn btn-dark" href="#book" data-combo="The Reset (chiro + 30 min massage)">Book The Reset</a>
+      </div>
+      <div class="combo feature">
+        <div class="tag">Most popular</div>
+        <div class="dur">About 90 minutes</div>
+        <h3>The Full Restore</h3>
+        <p>The complete treatment for real pain, old injuries, or a body that's been working hard.</p>
+        <ul><li>Full biomechanical assessment</li><li>Chiropractic adjustment &amp; soft tissue work</li><li>60 minutes of massage</li><li>Movement retraining plan</li></ul>
+        <a class="btn btn-primary" href="#book" data-combo="The Full Restore (chiro + 60 min massage)">Book The Full Restore</a>
+      </div>
+      <div class="combo">
+        <div class="dur">About 75 minutes</div>
+        <h3>Après Recovery</h3>
+        <p>For a big day on the hill or the bike trails. Loosen up, realign, and be ready for tomorrow.</p>
+        <ul><li>Adjustment for back, hips &amp; neck</li><li>45 minutes of recovery massage</li><li>Stretch &amp; mobility routine</li></ul>
+        <a class="btn btn-dark" href="#book" data-combo="Après Recovery (chiro + 45 min massage)">Book Après Recovery</a>
+      </div>
+    </div>
+    <div class="singles">
+      <div class="single"><div><h3>Chiropractic visit</h3><small>Assessment, adjustment &amp; soft tissue work</small></div><a href="#book" data-combo="Chiropractic visit only">Book →</a></div>
+      <div class="single"><div><h3>Massage only</h3><small>60 or 90 minutes</small></div><a href="#book" data-combo="Massage only">Book →</a></div>
+    </div>
+    <p class="note">Visiting as a group or staying in a chalet? Ask about back-to-back visits for friends and family at the same address.</p>
+  </div>
+</section>
 
 <section class="approach" id="approach">
   <div class="wrap grid">
@@ -271,11 +333,12 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
       <div class="eyebrow">The approach</div>
       <h2>Treat the cause, not just the symptom.</h2>
       <p>Pain relief matters. But if the reason it started is still there, it tends to come back. Every visit starts with a careful look at how you move, so treatment goes after the real source of the problem.</p>
-      <p>You'll leave knowing what's going on and why. When you understand your body, you can take an active role in getting better and staying that way.</p>
-      <div class="pillars">
-        <div class="pillar"><span>1</span><div><h3>Assess</h3><p>A thorough biomechanical assessment of the spine, joints and the way you move.</p></div></div>
-        <div class="pillar"><span>2</span><div><h3>Treat</h3><p>Hands-on care that combines chiropractic adjustments with soft tissue therapy.</p></div></div>
-        <div class="pillar"><span>3</span><div><h3>Retrain</h3><p>Movement retraining and exercises built for you, so the results last.</p></div></div>
+      <p>You'll finish knowing what's going on and why. When you understand your body, you can take an active role in getting better and staying that way.</p>
+      <div class="cards">
+        <div class="card"><h3>Spinal manipulation</h3><p>Precise adjustments to restore motion in the spine.</p></div>
+        <div class="card"><h3>Extremity adjusting</h3><p>Shoulders, hips, knees, ankles and wrists.</p></div>
+        <div class="card"><h3>Soft tissue therapy</h3><p>Massage-trained hands for muscles and fascia.</p></div>
+        <div class="card"><h3>Movement retraining</h3><p>Exercises built for you, so results last.</p></div>
       </div>
     </div>
     <div class="photo-stack">
@@ -295,10 +358,10 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
   <div class="wrap grid">
     <div class="portrait">
       <div class="frame">
-        <!-- Swap in Paige's headshot: <img src="img/paige-nosal.jpg" alt="Dr. Paige Nosal, chiropractor in Whistler"> -->
+        <!-- Swap in Paige's headshot: <img src="img/paige-nosal.jpg" alt="Dr. Paige Nosal, mobile chiropractor in Whistler"> -->
         <div class="mono">PN<small>Dr. Paige Nosal</small></div>
       </div>
-      <div class="cap"><b>Dr. Paige Nosal</b><span>D.C., MSc, BSc, RMT · Chiropractor &amp; Registered Massage Therapist</span></div>
+      <div class="cap"><b>Dr. Paige Nosal</b><span>D.C., MSc, BSc · Chiropractor, massage therapy trained</span></div>
     </div>
     <div>
       <div class="eyebrow">Meet Dr. Nosal</div>
@@ -309,56 +372,12 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
       <div class="creds">
         <div class="cred"><small>Education</small><div>BSc (Hons Kinesiology) &amp; MSc, University of Waterloo</div></div>
         <div class="cred"><small>Chiropractic</small><div>Doctor of Chiropractic, CMCC, 2022</div></div>
-        <div class="cred"><small>Massage therapy</small><div>Advanced Standing RMT Diploma, RCCMT</div></div>
-        <div class="cred"><small>Memberships</small><div>BC Chiropractic Association, Canadian Chiropractic Association, Ontario Chiropractic Association</div></div>
+        <div class="cred"><small>Massage therapy</small><div>Advanced Standing Massage Therapy Diploma, RCCMT</div></div>
+        <div class="cred"><small>Memberships</small><div>BC Chiropractic Association, Canadian Chiropractic Association</div></div>
       </div>
       <div class="offduty">
         <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l6-11 4 6 3-4 5 9z"/><circle cx="17" cy="5" r="2"/></svg></div>
         <p><strong style="color:#fff">Off the clock</strong>, Paige competes nationally in ringette. She mountain bikes, runs and chases outdoor adventures, and spends time with friends, family and her church community. Sometimes she just lies low with a good book.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="treat" id="treatments">
-  <div class="wrap">
-    <div class="head">
-      <div>
-        <div class="eyebrow">Treatments</div>
-        <h2>Hands-on care, built around how you move.</h2>
-      </div>
-      <p>Your plan depends on your assessment. Treatment may include any combination of the following.</p>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2v20M9 5h6M8.5 9h7M9 13h6M8.5 17h7"/></svg>
-        <h3>Spinal manipulative therapy</h3>
-        <p>Precise adjustments to restore motion in stiff or painful areas of the spine.</p>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
-        <h3>Extremity adjusting</h3>
-        <p>Care for shoulders, hips, knees, ankles, wrists and other joints beyond the spine.</p>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 15c2-3 4-3 6 0s4 3 6 0 4-3 4-3M4 9c2-3 4-3 6 0s4 3 6 0 4-3 4-3"/></svg>
-        <h3>Soft tissue therapy</h3>
-        <p>Massage-trained hands that address tight muscles, fascia and trigger points.</p>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
-        <h3>Electro-modalities</h3>
-        <p>Therapeutic tools that help manage pain and support tissue healing.</p>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M7 21l3-6 3 2v4M10 15l1-6 4 3 3-1M11 9L7 11"/></svg>
-        <h3>Exercise &amp; movement retraining</h3>
-        <p>Personalised exercise prescription that corrects the movement patterns behind your pain.</p>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21c0-6 3-9 6-11M12 10c3 2 6 5 6 11M12 10V3M9 6l3-3 3 3"/></svg>
-        <h3>Lifestyle &amp; nutrition advice</h3>
-        <p>Practical guidance on the everyday habits that affect recovery and long-term health.</p>
       </div>
     </div>
   </div>
@@ -370,53 +389,51 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
   <div class="wrap">
     <div class="eyebrow" style="color:#f3c39b">Who she helps</div>
     <h2>Built for Whistler bodies.</h2>
-    <p>Bike park crashes, ski season knees, long shifts on your feet, or hours at a desk. Whatever got you here, the aim is the same: get you moving well and back to what you love.</p>
+    <p>Locals between shifts, visitors in a chalet for the week, parents who can't get away. Bike park crashes, ski season knees or a long day at a desk. Whatever got you here, the aim is the same: get you moving well and back to what you love.</p>
     <div class="tags">
-      <span>Low back pain</span><span>Neck pain &amp; headaches</span><span>Shoulder injuries</span><span>Hip &amp; knee pain</span><span>Ankle &amp; foot problems</span><span>Sports injuries</span><span>Posture &amp; desk strain</span><span>Mountain bikers</span><span>Skiers &amp; riders</span><span>Runners</span>
+      <span>Low back pain</span><span>Neck pain &amp; headaches</span><span>Shoulder injuries</span><span>Hip &amp; knee pain</span><span>Sports injuries</span><span>Post-ski &amp; post-ride recovery</span><span>New parents</span><span>Chalet &amp; hotel guests</span><span>Posture &amp; desk strain</span>
     </div>
   </div>
 </section>
 
-<section class="fees" id="fees">
+<section class="book" id="book">
   <div class="wrap grid">
     <div class="intro">
-      <div class="eyebrow">Fees</div>
-      <h2>Clear pricing, no surprises.</h2>
-      <p>Your first visit includes a full assessment and treatment, so you leave with relief and a plan.</p>
-      <p>Custom orthotics are also available, starting with a 3-D foot scan.</p>
-      <div class="note">Many extended health plans cover chiropractic care. Check your plan for coverage details. Fees are subject to change; see the booking page for current rates.</div>
+      <div class="eyebrow">Book a visit</div>
+      <h2>Tell Paige where and when.</h2>
+      <p>Send a request and Paige will confirm your time, address and rate, usually within a day.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Homes, chalets, hotels and vacation rentals in Whistler.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Daytime, evening and weekend visits on request.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg><span>Questions? Email <a href="mailto:drpaigenosal@gmail.com">drpaigenosal@gmail.com</a>.</span></li>
+      </ul>
+      <p style="font-size:.9rem">Many extended health plans cover chiropractic care. Receipts are provided for your insurer.</p>
     </div>
-    <div class="fee-list">
-      <div class="fee"><div><h3>Initial consultation &amp; treatment</h3><small>30 minutes · new patients</small></div><div class="price">$140</div></div>
-      <div class="fee"><div><h3>Subsequent treatment</h3><small>15 minutes</small></div><div class="price">$80</div></div>
-      <div class="fee"><div><h3>Extended subsequent treatment</h3><small>30 minutes</small></div><div class="price">$140</div></div>
-      <div class="fee"><div><h3>Orthotic assessment &amp; 3-D scan</h3><small>30 minutes</small></div><div class="price">$120</div></div>
-      <div class="fee"><div><h3>Orthotic dispensing &amp; fitting</h3><small>15 minutes · once your orthotics are ready</small></div><div class="price">$330</div></div>
-      <div class="fee-cta"><p>See live availability and book in a minute.</p><a class="btn btn-dark" href="https://whistlerchiropractic.janeapp.com/#/staff_member/13" target="_blank" rel="noopener">Book online</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="visit" id="visit">
-  <div class="wrap grid">
-    <div>
-      <div class="eyebrow">Visit</div>
-      <h2>Find us in Whistler Village.</h2>
-      <div class="info">
-        <div><small>Clinic</small><span>Whistler Chiropractic</span></div>
-        <div><small>Address</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Whistler+Chiropractic+4433+Sundial+Place+Whistler+BC" target="_blank" rel="noopener">#204-4433 Sundial Place<br>Whistler, BC V8E 1G7</a></div>
-        <div><small>Phone</small><a href="tel:+16049321922">604-932-1922</a></div>
-        <div><small>Booking</small><span>Online, or by phone</span></div>
+    <form id="bookForm" novalidate>
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+      <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+      <div class="full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+      <div class="full"><label for="f-combo">Treatment</label>
+        <select id="f-combo" name="treatment">
+          <option>The Full Restore (chiro + 60 min massage)</option>
+          <option>The Reset (chiro + 30 min massage)</option>
+          <option>Après Recovery (chiro + 45 min massage)</option>
+          <option>Chiropractic visit only</option>
+          <option>Massage only</option>
+          <option>Not sure, please advise</option>
+        </select>
       </div>
-      <div class="ctas">
-        <a class="btn btn-primary" href="https://whistlerchiropractic.janeapp.com/#/staff_member/13" target="_blank" rel="noopener">Book with Dr. Nosal</a>
-        <a class="btn btn-dark" href="tel:+16049321922">Call the clinic</a>
+      <div><label for="f-date">Preferred date</label><input id="f-date" name="preferred_date" type="date"></div>
+      <div><label for="f-time">Preferred time</label>
+        <select id="f-time" name="preferred_time"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Flexible</option></select>
       </div>
-      <p class="fine">Please book online or by phone. Appointment requests can't be taken by email.</p>
-    </div>
-    <div class="map">
-      <iframe title="Map to Whistler Chiropractic, 4433 Sundial Place" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Whistler+Chiropractic,+4433+Sundial+Place,+Whistler,+BC&amp;output=embed"></iframe>
-    </div>
+      <div class="full"><label for="f-where">Where should Paige come?</label><input id="f-where" name="location" placeholder="Neighbourhood, hotel or address" required></div>
+      <div class="full"><label for="f-notes">What's bothering you? <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="f-notes" name="notes" placeholder="Where it hurts, how long, how many people..."></textarea></div>
+      <div class="form-msg" id="formMsg" role="status"></div>
+      <div class="full"><button class="btn btn-primary" type="submit" id="submitBtn">Request my visit</button></div>
+      <p class="full fine">Your request goes straight to Paige. This isn't a confirmed booking until she replies.</p>
+    </form>
   </div>
 </section>
 
@@ -425,21 +442,18 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
     <div class="top">
       <a class="brand" href="#top">
         <svg viewBox="0 0 64 64" aria-hidden="true" style="width:34px;height:34px"><rect width="64" height="64" rx="14" fill="#fff" opacity=".08"/><path d="M10 46 L26 22 L33 32 L40 18 L54 46 Z" fill="#e08a4f"/></svg>
-        <span><b>Dr. Paige Nosal</b><small>Whistler Chiropractor</small></span>
+        <span><b>Dr. Paige Nosal</b><small>Mobile Chiro &amp; Massage</small></span>
       </a>
-      <div>#204-4433 Sundial Place, Whistler, BC V8E 1G7<br><a href="tel:+16049321922">604-932-1922</a> · <a href="https://whistlerchiropractic.janeapp.com/#/staff_member/13" target="_blank" rel="noopener">Book online</a></div>
+      <div>In-home chiropractic &amp; massage, Whistler BC<br><a href="mailto:drpaigenosal@gmail.com">drpaigenosal@gmail.com</a> · <a href="#book">Book a visit</a></div>
     </div>
     <div class="bottom">
-      <span>© <span id="yr">2026</span> Dr. Paige Nosal, D.C. Practising at Whistler Chiropractic.</span>
+      <span>© <span id="yr">2026</span> Dr. Paige Nosal, D.C.</span>
       <span>Landscape photography by <a href="https://thefulltimehobby.com/stock" target="_blank" rel="noopener">The Full Time Hobby</a></span>
     </div>
   </div>
 </footer>
 
-<div class="mobile-book">
-  <a class="btn btn-dark" href="tel:+16049321922">Call</a>
-  <a class="btn btn-primary" href="https://whistlerchiropractic.janeapp.com/#/staff_member/13" target="_blank" rel="noopener">Book online</a>
-</div>
+<div class="mobile-book"><a class="btn btn-primary" href="#book">Book a visit</a></div>
 
 <script>
 (function(){
@@ -449,6 +463,41 @@ footer .bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wra
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
   document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
   document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var sel=document.getElementById('f-combo');
+  document.querySelectorAll('[data-combo]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var v=a.getAttribute('data-combo');
+      for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v){sel.selectedIndex=i}}
+    });
+  });
+  var d=document.getElementById('f-date');d.min=new Date().toISOString().slice(0,10);
+
+  var TO='drpaigenosal@gmail.com';
+  var form=document.getElementById('bookForm'),msg=document.getElementById('formMsg'),sb=document.getElementById('submitBtn');
+  function mailtoFallback(data){
+    var body=Object.keys(data).filter(function(k){return k[0]!=='_'}).map(function(k){return k.replace('_',' ')+': '+data[k]}).join('\n');
+    location.href='mailto:'+TO+'?subject='+encodeURIComponent('Visit request from '+data.name)+'&body='+encodeURIComponent(body);
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    msg.className='form-msg';
+    var need=['f-name','f-phone','f-email','f-where'],bad=need.filter(function(id){var el=document.getElementById(id);return !el.value.trim()||(el.type==='email'&&!/^\S+@\S+\.\S+$/.test(el.value))});
+    if(bad.length){msg.className='form-msg err';msg.textContent='Please add your name, phone, a valid email and where Paige should come.';document.getElementById(bad[0]).focus();return}
+    var data={};new FormData(form).forEach(function(v,k){data[k]=v});
+    if(data._honey){return}
+    delete data._honey;
+    data._subject='New visit request: '+data.treatment;data._template='table';data._captcha='false';data._replyto=data.email;
+    sb.disabled=true;sb.textContent='Sending...';
+    fetch('https://formsubmit.co/ajax/'+TO,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json()})
+      .then(function(j){
+        if(String(j.success)==='true'){msg.className='form-msg ok';msg.textContent='Thanks '+data.name.split(' ')[0]+'! Paige will be in touch shortly to confirm your visit.';form.reset()}
+        else{throw new Error('fail')}
+      })
+      .catch(function(){msg.className='form-msg err';msg.innerHTML='That didn’t send. Opening your email app instead, or email <a href="mailto:'+TO+'">'+TO+'</a>.';mailtoFallback(data)})
+      .finally(function(){sb.disabled=false;sb.textContent='Request my visit'});
+  });
 })();
 </script>
 </body>
